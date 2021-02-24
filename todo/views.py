@@ -44,4 +44,3 @@ def delete_item(request, item_id):
     item_get = get_object_or_404(item, id=item_id)
     item.delete(item_get)
     return redirect('getToDoList')
-    
